@@ -228,6 +228,7 @@ footer {
     }
 
     .box-left button:hover {
+        margin-top: 1em;
         border: 2px solid rgb(0, 0, 230);
     }
 
