@@ -116,7 +116,7 @@ nav ul li {
 
 .box-left button {
     width: 180px;
-    margin-top: -.4em;
+    margin-top: -.2em;
     padding: .5em;
     border-radius: 20px;
     font-size: 20px;
@@ -127,9 +127,10 @@ nav ul li {
 
 .box-left button:hover {
     cursor: pointer;
-    margin-top: -.5em;
+    margin-top: -.3em;
     background-color: rgb(0, 0, 230);
     border: 3px solid rgb(0, 0, 230);
+    color: #ffffff;
 }
 
 .box-right {
@@ -179,25 +180,91 @@ footer {
     justify-content: space-between;
 }
 
-@media only screen and (max-width:640px){
+
+@media only screen and ( max-width: 1024px){
 
     body {
-        font-size: 12px;
+        font-size: 17px;
     }
 
     header h3 {
+        font-size: 18px;
+    }
+
+    .menu-icon{
+        width: 16px;
+        padding-left: 1em;
+    }
+
+    nav{
+        height: 20em;
+        width: 12.2em;
+        margin-top: 0;
+    }
+
+    .box-calc {
+        height: 18em;
+        width: 26em; 
+        padding: 0;
+    }
+
+    .box-left {
+        margin-top: 1.6em;
+        height: 12em;
+        width: 10em;
+    }
+
+    .box-right {
+        margin-top: .5em;
+    }
+    
+    .box-left label {
+        margin-bottom: 2.25em;
+    }
+
+    .box-left button {
+        width: 120px;
+        height: 37px;
+        font-size: 16px;
+        font-weight: 500;
+        margin: -.3em .2em;
+        padding: 0 1em;
+    }
+
+    .box-left button:hover {
+        border: 2px solid rgb(0, 0, 230);
+        margin: -.6em .3em;
+        color: #ffffff;
+    }
+
+    .box-right input {
+        width: 120px;
+        height: 32px;
+        margin-bottom: .5em;
+        
+    }
+}
+
+
+@media only screen and (max-width:640px){
+
+    body {
         font-size: 14px;
+    }
+
+    header h3 {
+        font-size: 16px;
       
     }
 
     .menu-icon{
-        width: 3%;
+        width: 14px;
         padding-left: .5em;
     }
 
     nav {
         height: 20em;
-        width: 15.075em;
+        width: 13.5em;
         margin-top: 0;
     }
 
@@ -208,40 +275,35 @@ footer {
     }
 
     .box-left {
-        margin-top: .5em;
+        margin-top: 1em;
         height: 12em;
         width: 10em;
     }
     
     .box-left label {
-        margin-bottom: 1.4em;
-        
+        margin-bottom: 1.2em;
     }
 
     .box-left button {
-        width: 80px;
-        height: 20px;
+        width: 90px;
+        height: 26px;
         font-size: 12px;
-        margin: 0;
+        margin-top: -.25em;
         padding: 0;
         
     }
 
     .box-left button:hover {
-        margin: 0;
+        margin-top: -.25em;
         padding: 0;
         border: 2px solid rgb(0, 0, 230);
+        color: #ffffff;
     }
 
     .box-right input {
         width: 80px;
-        height: 20px;
-        border-radius: 20px;
+        height: 23px;
         margin: 0.4em 0.5em;
-        padding: none;
-        font-size: 12px;
-        text-indent: 10px;
-        letter-spacing: .1px;
-        background-color: rgb(253, 231, 231);
     }
 }
+
