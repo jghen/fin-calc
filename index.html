@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Financial calulators</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="/index.html">Home</a>
+            <h3 id="h3center">Financial calculators</h3>
+            <img onclick="hideOrToggleMenu()" class="menu-icon" id="menu" src="menu.svg" alt="menu" >
+            <nav class="nav" id="nav">
+                <img onclick="hideOrToggleMenu()" class="exit-btn" src="exit.svg" alt="exit-btn">
+                <ul>
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">Mortgage-calc</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="after-header">
+            <p>A simple mortgage calculator:</p>
+        </section>
+        <section class="box-calc" >
+            <form class="mortgage-form" onsubmit="return loanMonthly()" action="#" id="myform" method="GET">
+                <div class="box-left">
+                    <label for="balance">Mortgage balance:</label>
+                    <label for="years">  Terms [ years ]: </label>                        
+                    <label for="interest">Interest rate [ % ]: </label>
+                    <button id="submit" type="submit">Calculate</button>
+                </div>
+                <div class="box-right">
+                    <input type="number" name="Balance" id="balance">
+                    <input type="number" name="Years" id="years" max="40" min="1" step="0.1">
+                    <input id="interest" name="interest" type="number" max="10" min="1" step="0.01">                        
+                    <input id="pmt" disabled>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <a href="/about.html">About</a>
+            <p>keegorg - calc 22.03.2020</p>
+            <a href="mailto:jangeorg85@gmail.com">Contact</a>
+        </footer>
+    </body>
+</html>
