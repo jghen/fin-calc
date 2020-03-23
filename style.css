@@ -88,7 +88,7 @@ nav ul li {
     height: 20em;
     width: 30em; 
     margin: 1em 3em 3em;
-    background: linear-gradient(to top left,tomato, rgb(255, 103, 77), rgb(250, 125, 102)); 
+    background: linear-gradient(to top left,#ff6347, rgb(255, 103, 77), rgb(250, 125, 102)); 
     color: rgb(253, 231, 231);
     border-radius: 10px;
     transition: all .5s ease-in-out;
