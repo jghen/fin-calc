@@ -91,33 +91,48 @@ nav ul li {
     background: linear-gradient(to top left,#ff6347, rgb(255, 103, 77), rgb(250, 125, 102)); 
     color: rgb(253, 231, 231);
     border-radius: 10px;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
 }
 .box-calc:hover {
-    transform: scale(1.05);
+    transform: scale(1.048);
 }
 
 .mortgage-form {
+    height: 85%;
+    width: 85%;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+}
+
+.box-left li, .box-right li {
+    list-style-type: none;
+    margin-left: -2.35em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.box-right li {
     justify-content: center;
-    padding: 2em;
 }
 
 .box-left {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.18em;
+    margin-right: .1em;
+}
+.box-right {
+    margin-left: .1em;
+}
     
-}
-
-.box-left button, .box-left label {
-    margin-bottom: 2.45em;
-}
-
-.box-left button {
+.box-left li button {
     width: 160px;
     height: 44px;
-    margin-top: -.3em;
     padding: 0 .5em;
     border-radius: 20px;
     font-size: 20px;
@@ -128,29 +143,20 @@ nav ul li {
     outline: none;
 }
 
-.box-left button:hover {
+.box-left li button:hover {
     cursor: pointer;
     transform: scale(1.1);
-    margin-top: -.3em;
     background-color: rgb(0, 0, 230);
     color: #ffffff;
 }
 
-.box-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.box-right input {
+.box-right li input {
     width: 180px;
-    height: 2.8em;
-    margin: 1em;
+    height: 2.9em;
     border-radius: 30px;
     border-style: none;
     outline: none; /* fjerner firkant rundt input når den er i focus */
     color: black;
-    font-size: 15px;
     text-indent: 25px;
     letter-spacing: .1px;
     background-color: rgb(253, 231, 231);
@@ -207,43 +213,17 @@ footer {
     .box-calc {
         height: 18em;
         width: 26em; 
-        padding: 0;
     }
 
-    .box-left {
-        margin-top: 1.6em;
-        height: 12em;
-        width: 10em;
+    .box-left li button {
+        width: 85%;
+        height: 80%;
     }
 
-    .box-right {
-        margin-top: .5em;
-    }
-    
-    .box-left label {
-        margin-bottom: 2.25em;
-    }
-
-    .box-left button {
-        width: 130px;
-        height: 37px;
-        font-size: 16px;
-        font-weight: 500;
-        margin: -.78em .2em;
-        padding: 0 1em;
-    }
-
-    .box-left button:hover {
-        margin: -.78em .2em;
-        color: #ffffff;
-    }
-
-    .box-right input {
-        width: 120px;
-        height: 32px;
-        margin-bottom: .5em;
+    .box-right li input {
+        width: 90%;
+        height: 75%;
         text-indent: 20px;
-        
     }
 }
 
@@ -272,39 +252,17 @@ footer {
     .box-calc {
         height: 15em;
         width: 24em; 
-        padding: 0;
     }
 
-    .box-left {
-        margin-top: 1.1em;
-        height: 12em;
-        width: 10em;
-    }
-    
-    .box-left label {
-        margin-bottom: 1.5em;
+    .box-left li button {
+        width: 85%;
+        height: 80%;
     }
 
-    .box-left button {
-        width: 100px;
-        height: 26px;
-        font-size: 12px;
-        margin-top: -.4em;
-        padding: 0;
-    }
-
-    .box-left button:hover {
-        margin-top: -.4em;
-        padding: 0;
-        color: #ffffff;
-    }
-
-    .box-right input {
-        width: 90px;
-        height: 23px;
-        margin: 0.4em 0.5em;
-        text-indent: 10px;
-        
+    .box-right li input {
+        width: 85%;
+        height: 75%;
+        text-indent: 20px;
     }
 }
 
