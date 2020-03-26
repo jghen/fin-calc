@@ -19,29 +19,30 @@ body {
 }
 
 
-@media (max-width=640px){
+
+@media (max-width:640px){
+
     .box-calc {
-        height: 12em;
-        width: 12em; 
+        height: 14em;
+        width: 16em; 
     }
 
     .mortgage-form {
-        width: 100%;
+        width: 95%;
         height: 95%;
     }
 
     .box-left li button {
-        width: 90%;
+        width: 95%;
         height: 80%;
         font-size: 16px;
     }
 
     .box-right li input {
-        width: 80%;
+        width: 85%;
         height: 75%;
         text-indent: 12px;
         font-size: 16px;
     }
 }
 
-}
