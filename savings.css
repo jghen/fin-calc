@@ -2,15 +2,6 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-header h3 {
-        font-size: 18px;
-    }
-
-    .menu-icon{
-        width: 14px;
-        padding-left: .5em;
-    }
-
 .box-calc {
     background: linear-gradient(to top left,#64d8a2d3, #33c983, #00dd76); 
     width: 33em;
@@ -30,6 +21,15 @@ header h3 {
 
 
 @media (max-width:640px){
+    header h3 {
+        font-size: 18px;
+    }
+
+ .menu-icon{
+        width: 14px;
+        padding-left: .5em;
+    }
+
 
     .box-calc {
         height: 18em;
@@ -40,7 +40,9 @@ header h3 {
         width: 95%;
         height: 95%;
     }
-
+    .box-left,.box-right{
+     width: 95%;
+}
     .box-left li button {
         width: 95%;
         height: 80%;
