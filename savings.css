@@ -8,11 +8,6 @@ body {
     height: 22em;
 }
 
-.mortgage-form {
-    width: 95%;
-    height: 95%;
-}
-
 .box-left li button {
     background-color: rgb(255, 0, 0);
     border: none;
@@ -21,4 +16,32 @@ body {
 
 .box-left li button:hover {
     background-color: rgb(233, 0, 0);
+}
+
+
+@media (max-width=640px){
+    .box-calc {
+        height: 15em;
+        width: 24em; 
+    }
+
+    .mortgage-form {
+        width: 95%;
+        height: 95%;
+    }
+
+    .box-left li button {
+        width: 95%;
+        height: 80%;
+        font-size: 16px;
+    }
+
+    .box-right li input {
+        width: 85%;
+        height: 75%;
+        text-indent: 12px;
+        font-size: 16px;
+    }
+}
+
 }
