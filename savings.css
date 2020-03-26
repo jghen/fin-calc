@@ -21,8 +21,8 @@ body {
 
 @media (max-width=640px){
     .box-calc {
-        height: 15em;
-        width: 20em; 
+        height: 12em;
+        width: 12em; 
     }
 
     .mortgage-form {
