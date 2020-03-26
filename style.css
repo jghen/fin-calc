@@ -157,7 +157,7 @@ nav ul li {
     border-style: none;
     outline: none; /* fjerner firkant rundt input når den er i focus */
     font-size: 16px;
-    text-indent: 20px;
+    text-indent: 16px;
     letter-spacing: .5px;
     background-color: rgb(253, 231, 231);
 }
@@ -192,11 +192,11 @@ footer {
 @media ( max-width: 1024px){
 
     body {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     header h3 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .menu-icon{
@@ -218,23 +218,24 @@ footer {
     .box-left li button {
         width: 85%;
         height: 80%;
+        font-size: 18px;
     }
 
     .box-right li input {
         width: 90%;
         height: 75%;
-        text-indent: 20px;
+        text-indent: 14px;
     }
 }
 
 @media (max-width:640px){
 
     body {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     header h3 {
-        font-size: 16px;
+        font-size: 18px;
       
     }
 
@@ -255,14 +256,15 @@ footer {
     }
 
     .box-left li button {
-        width: 85%;
+        width: 90%;
         height: 80%;
+        font-size: 16px;
     }
 
     .box-right li input {
         width: 85%;
         height: 75%;
-        text-indent: 20px;
+        text-indent: 12px;
     }
 }
 
