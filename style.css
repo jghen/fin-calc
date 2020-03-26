@@ -253,6 +253,11 @@ footer {
         height: 15em;
         width: 24em; 
     }
+    
+     .mortgage-form {
+        width: 95%;
+        height: 95%;
+    }
 
     .box-left li button {
         width: 95%;
