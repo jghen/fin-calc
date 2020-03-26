@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Financial calulators</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="savings.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Home</a>
+            <h3 id="h3center">Financial calculators</h3>
+            <img onclick="hideOrToggleMenu()" class="menu-icon" id="menu" src="menu.svg" alt="menu" >
+            <nav class="nav" id="nav">
+                <img onclick="hideOrToggleMenu()" class="exit-btn" src="exit.svg" alt="exit-btn">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Mortgage-calc</a>
+                    </li>
+                    <li>
+                        <a href="savings-calc.html">Savings-calc</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="after-header">
+            <p>A simple savings calculator:</p>
+        </section>
+        <section class="box-calc" >
+            <form class="mortgage-form" onsubmit ="return savingsMonthly()" action="#" id="savingsform" method="GET">
+                <ul class="box-left">
+                    <li><label for="balance">Initial balance:</label></li>
+                    <li><label for="payment">Monthly savings:</label></li>
+                    <li><label for="years">Years of saving: </label></li>                     
+                    <li><label for="interest">Interest rate [ % ]: </label></li>
+                    <li><button id="submit" type="submit">Calculate</button></li>
+                </ul>
+                <ul class="box-right">
+                    <li><input type="number" name="Balance" id="balance"></li>
+                    <li><input type="number" name="Payment" id="payment"></li>
+                    <li><input type="number" name="Years" id="years" max="100" min="1" step="0.1"></li>
+                    <li><input type="number" name="Interest" id="interest" max="100" min="0" step="0.01"></li>                      
+                    <li><input id="savings" placeholder="Savings Calculated" disabled></li>
+                </ul>
+            </form>
+        </section>
+        <footer>
+            <a href="about.html">About</a>
+            <p>keegorg - calc 24.03.2020</p>
+            <a href="mailto:jangeorg85@gmail.com">Contact</a>
+        </footer>
+    </body>
+</html>
