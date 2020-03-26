@@ -1,0 +1,23 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.box-calc {
+    background: linear-gradient(to top left,#64d8a2d3, #33c983, #00dd76); 
+    width: 36em;
+    height: 24em;
+}
+
+.mortgage-form {
+    width: 90%;
+    height: 90%;
+}
+
+.box-left li button {
+    background-color: rgb(255, 0, 0);
+    border: none;
+}
+
+.box-left li button:hover {
+    background-color: rgb(233, 0, 0);
+}
