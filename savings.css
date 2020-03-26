@@ -16,6 +16,7 @@ body {
 .box-left li button {
     background-color: rgb(255, 0, 0);
     border: none;
+    width: 95%;
 }
 
 .box-left li button:hover {
