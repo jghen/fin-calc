@@ -25,15 +25,9 @@ body {
         font-size: 18px;
     }
 
- .menu-icon{
-        width: 14px;
-        padding-left: .5em;
-    }
-
-
     .box-calc {
-        height: 18em;
-        width: 22em; 
+        height: 20em;
+        width: 25em; 
     }
 
     .mortgage-form {
@@ -50,7 +44,7 @@ body {
     }
 
     .box-right li input {
-        width: 85%;
+        width: 90%;
         height: 75%;
         text-indent: 12px;
         font-size: 16px;
