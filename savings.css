@@ -2,6 +2,15 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+header h3 {
+        font-size: 18px;
+    }
+
+    .menu-icon{
+        width: 14px;
+        padding-left: .5em;
+    }
+
 .box-calc {
     background: linear-gradient(to top left,#64d8a2d3, #33c983, #00dd76); 
     width: 33em;
