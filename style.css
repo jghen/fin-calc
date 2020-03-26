@@ -108,6 +108,7 @@ nav ul li {
     justify-content: space-evenly;
     align-items: center;
     z-index: 1;
+    border:1px solid black;
 }
 
 .box-left li, .box-right li {
@@ -117,6 +118,7 @@ nav ul li {
     display: flex;
     align-items: center;
     z-index: 2;
+    border:1px solid black;
 }
 
 .box-right li {
