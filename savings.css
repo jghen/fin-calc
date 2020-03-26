@@ -24,7 +24,12 @@ body {
     header h3 {
         font-size: 18px;
     }
-
+    
+    nav {
+        height: 20em;
+        width: 10.5em;
+        margin-top: 0;
+    }
     .box-calc {
         height: 20em;
         width: 25em; 
