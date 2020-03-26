@@ -236,7 +236,6 @@ footer {
 
     header h3 {
         font-size: 18px;
-      
     }
 
     .menu-icon{
@@ -256,7 +255,7 @@ footer {
     }
 
     .box-left li button {
-        width: 90%;
+        width: 95%;
         height: 80%;
         font-size: 16px;
     }
@@ -265,6 +264,7 @@ footer {
         width: 85%;
         height: 75%;
         text-indent: 12px;
+        font-size: 16px;
     }
 }
 
