@@ -1,0 +1,52 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.box-calc {
+    background: linear-gradient(to top left,#64a4d8d3, #339ec9, #009edd); 
+    width: 33em;
+    height: 22em;
+}
+
+.box-left li button {
+    background-color: rgb(233, 72, 0);
+    border: none;
+    width: 95%;
+}
+
+.box-left li button:hover {
+    background-color: rgb(202, 64, 0);
+}
+
+@media (max-width:640px){
+    header h3 {
+        font-size: 18px;
+    }
+    
+    .box-calc {
+        height: 20em;
+        width: 25em; 
+    }
+
+    .mortgage-form {
+        width: 90%;
+        height: 95%;
+    }
+
+    .box-left,.box-right{
+     width: 95%;
+    }
+
+    .box-left li button {
+        width: 90%;
+        height: 80%;
+        font-size: 16px;
+    }
+
+    .box-right li input {
+        width: 95%;
+        height: 75%;
+        text-indent: 12px;
+        font-size: 16px;
+    }
+}
