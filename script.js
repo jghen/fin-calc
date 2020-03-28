@@ -75,8 +75,8 @@ function savingsMonthly() {
     }
     //get the last element in the array
     const lastelement = newPrincipal[terms-1];
-    const totalbalance = singleContribution + lastelement;
-    const endbalance = totalbalance.toFixed(0);
+    const totalbalance = Math.round(singleContribution + lastelement);
+    const endbalance = totalbalance.toLocaleString('en-US');
     document.getElementById('savings').value = endbalance;
   
     return false; 
