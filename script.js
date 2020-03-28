@@ -80,5 +80,58 @@ function savingsMonthly() {
     document.getElementById('savings').value = endbalance;
   
     return false; 
+}
 
+function retirementYearly (){
+    const fund = document.getElementById('Rbalance').value;
+    const withdrawal = document.getElementById('withdrawal').value;
+    const returnrate = document.getElementById('return').value;
+
+    //convert to number
+    const balance = parseFloat(fund);
+    const withdraw = parseFloat(withdrawal);
+    const r = 1 + parseFloat(returnrate)/100; //r = 1 + interest
+    
+    const pensionFund=[0];
+    pensionFund[0] = balance; //position 0 in array pensionFund = balance of pensionfund at year 0;
+
+    let i = 0;
+    const upper = withdraw;
+    
+    /* let condition = pensionFund[pensionFund.length]; */
+
+    // formula: year i+1 start = pensionFund[i+1] = pensionFund[i] * r - withdraw 
+
+    //y0 start: fund = [1000]
+    //i = 0, y1 start: 1000 - 500 * 110% = 550,  fund = [1000, 550], first loop done, i = 1
+    //i = 1, y2 start: 550 - 500 * 110% = 55, fund [1000, 600, 55], second loop done, i = 2
+    // i = 2 y3start: will not start year 3. because pensionFund[i=2] = pensionFund[3] < 500
+    // length = 3, array = [1000, 600, 100]
+
+
+    while (pensionFund[i] > upper && pensionFund.length-1 < 100) {
+            let startOfYear = (pensionFund[i]); //convert to number: fund balance at i
+            let endOfYear = r * (startOfYear - withdraw); //number: fund balance at i+1
+            pensionFund.push(endOfYear); //push the fund balance (string) at i+1
+            i=i+1;
+    }
+
+    const lastBalance = pensionFund[pensionFund.length-1]; //get last balance
+    const lastYears = pensionFund.length-1; 
+    const y = lastYears.toFixed(0); //convert lasting years to string
+    let extraMonths = 0;
+
+    if (lastBalance >= withdraw/12 && lastYears<100) {
+        extraMonths = Math.round(lastBalance / withdraw * 12); // how many months wil last balance last?
+        const m = extraMonths.toFixed(0); //convert lasting months to string */
+        document.getElementById('fundLasts').value = y + ' years, ' + m + ' months';
+
+    } else if (lastBalance < withdraw && lastYears<100) {
+        document.getElementById('fundLasts').value = y + ' years, 0 months';
+
+    } else {
+        document.getElementById('fundLasts').value = "100+ yrs. You're OK..";
+    }
+
+    return false;
 }
