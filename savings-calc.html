@@ -44,14 +44,14 @@
                     <li><label for="balance">Initial balance:</label></li>
                     <li><label for="payment">Monthly savings:</label></li>
                     <li><label for="years">Years of saving: </label></li>                     
-                    <li><label for="interest">Interest rate [ % ]: </label></li>
+                    <li><label for="interest">Annual return [ % ]: </label></li>
                     <li><button id="submit" type="submit">Calculate</button></li>
                 </ul>
                 <ul class="box-right">
                     <li><input type="number" name="Balance" id="balance"></li>
-                    <li><input type="number" name="Payment" id="payment"></li>
+                    <li><input type="number" name="Payment" id="payment" placeholder="Insert 0 if you don't"></li>
                     <li><input type="number" name="Years" id="years" max="100" min="1" step="0.1"></li>
-                    <li><input type="number" name="Interest" id="interest" max="100" min="0" step="0.01"></li>                      
+                    <li><input type="number" name="Interest" id="interest" max="100" min="0" step="0.01" placeholder="4 % for stocks"></li>                      
                     <li><input id="savings" placeholder="Savings Calculated" disabled></li>
                 </ul>
             </form>
