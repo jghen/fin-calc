@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="retirement.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="script.js"></script>
     </head>
     <body>
@@ -41,15 +42,15 @@
         <section class="box-calc" >
             <form class="mortgage-form" onsubmit ="return retirementYearly()" action="#" id="savingsform" method="GET">
                 <ul class="box-left">
-                    <li><label for="Rbalance">Retirement fund:</label></li>
+                    <li><label for="Rbalance">Pension fund:</label></li>
+                    <li><label for="withdrawal">Yearly withdrawal:</label></li>                    
                     <li><label for="return">Annual Return [ % ]: </label></li>
-		    <li><label for="withdrawal">Yearly withdrawal:</label></li>
                     <li><button id="submit" type="submit">Calculate</button></li>
                 </ul>
                 <ul class="box-right">
-                    <li><input type="number" name="Balance" id="Rbalance"></li>
-                    <li><input type="number" name="Return" id="return" max="100" min="0" step="0.01" placeholder="4 % for stocks"></li>
-		    <li><input type="number" name="Withdrawal" id="withdrawal"></li>                     
+                    <li><input type="text" name="Balance" id="Rbalance" class="number"></li>
+                    <li><input type="number" name="Withdrawal" id="withdrawal"></li>
+                    <li><input type="number" name="Return" id="return" max="100" min="0" step="0.01"></li>                      
                     <li><input id="fundLasts" placeholder="The fund will last..." disabled></li> 
 
                 </ul>
