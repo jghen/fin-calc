@@ -15,6 +15,22 @@ function hideOrToggleMenu() {
         h3.style.marginRight = '-7rem';
     }
 }
+//neds jquery to work 
+function commaSeparateNumber(index, val) {
+    val = val.replace(/\D/g, '');
+    var array = val.split('');
+    var index = -3;
+    while (array.length + index > 0) {
+        array.splice(index, 0, ".");
+        // Decrement by 4 since we just added another unit to the array.
+        index -= 4;
+    }
+    return array.join('');
+};
+//neds jquery to work 
+$(document).on('keyup', '.number', function () {
+    $(this).val(commaSeparateNumber);
+});
 
 function loanMonthly() {
     //get values     
@@ -62,15 +78,15 @@ function savingsMonthly() {
 
     //monthly savings grows to = pmt +pmt*r^1 + pmt*r^2 + pmt*r^3 + ...... +  = sum(pmt*r^i)
 
-    let i = 0;
+    let i = 0; //use let to make it changeable.
     const newPrincipal = [0]; //create new array with value = 0
     const valueFirstMonth = monthlypayment; //value first month is the initial principal
-    newPrincipal[0]=valueFirstMonth //insert value first month in position 0
+    newPrincipal[0]=valueFirstMonth; //insert value first month in position 0
 
          while (i < terms+1) {
-        let valuePos0 = newPrincipal[i];
-        let valuePos1 = valuePos0 + monthlypayment* Math.pow(1+r,i+1);
-        newPrincipal.push(valuePos1);
+        let valuePos0 = newPrincipal[i]; //use let
+        let valuePos1 = valuePos0 + monthlypayment* Math.pow(1+r,i+1); //use let
+        newPrincipal.push(valuePos1); //push new balance to next position in the array
         i=i+1;
     }
     //get the last element in the array
@@ -78,17 +94,20 @@ function savingsMonthly() {
     const totalbalance = Math.round(singleContribution + lastelement);
     const endbalance = totalbalance.toLocaleString('en-US');
     document.getElementById('savings').value = endbalance;
-  
     return false; 
+
 }
 
 function retirementYearly (){
-    const fund = document.getElementById('Rbalance').value;
+    let fund = document.getElementById('Rbalance').value;
     const withdrawal = document.getElementById('withdrawal').value;
     const returnrate = document.getElementById('return').value;
 
+    //remove commas
+    const noCommaFund = fund.split('.').join("");
+   
     //convert to number
-    const balance = parseFloat(fund);
+    const balance = parseFloat(noCommaFund);
     const withdraw = parseFloat(withdrawal);
     const r = 1 + parseFloat(returnrate)/100; //r = 1 + interest
     
@@ -97,8 +116,6 @@ function retirementYearly (){
 
     let i = 0;
     const upper = withdraw;
-    
-    /* let condition = pensionFund[pensionFund.length]; */
 
     // formula: year i+1 start = pensionFund[i+1] = pensionFund[i] * r - withdraw 
 
@@ -123,7 +140,7 @@ function retirementYearly (){
 
     if (lastBalance >= withdraw/12 && lastYears<100) {
         extraMonths = Math.round(lastBalance / withdraw * 12); // how many months wil last balance last?
-        const m = extraMonths.toFixed(0); //convert lasting months to string */
+        const m = extraMonths.toFixed(0); //convert lasting months to string 
         document.getElementById('fundLasts').value = y + ' years, ' + m + ' months';
 
     } else if (lastBalance < withdraw && lastYears<100) {
