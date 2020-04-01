@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Financial calulators</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="skattetrekk.css">
+        <script src="skattetrekk.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Home</a>
+            <img onclick="hideOrToggleMenu()" class="menu-icon" id="menu" src="menu.svg" alt="menu" >
+            <nav class="nav" id="nav">
+                <img onclick="hideOrToggleMenu()" class="exit-btn" src="exit.svg" alt="exit-btn">
+                <ul>
+                    <li>
+                        <a href="skattetrekk.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Lånekalkulator</a>
+                    </li>
+                    <li>
+                        <a href="savings-calc.html">Sparekalkulator</a>
+                    </li>
+                    <li>
+                        <a href="retirement.html">Annen kalkulator</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="after-header">
+            <p>Regn ut skattetrekket ditt i prosent:</p>
+        </section>
+        <section class="box-calc" >
+            <form class="mortgage-form" onsubmit ="return taxCalc()" action="#" id="skatteform" method="GET">
+                <ul class="box-left">
+                    <li><label for="lonnsinntekter">Brutto årslønn:</label></li>
+                    <li><label for="studielaan">Studielån: </label></li>                     
+                    <li><label for="studierente">Rente studielån [ % ]:</label></li>
+                    <li><label for="boliglaan">Boliglån: </label></li>
+
+                    <li><label for="boligrente">Rente boliglån [ % ]: </label></li>
+                    <li><label for="boligbrok">Eierbrøk bolig [ % ]: </label></li>  
+                    <li><label for="bankinnskudd">Bankinnskudd: </label></li>                     
+                    <li><label for="innskuddsrente">Innskuddsrente[ % ]: </label></li>
+                    <li><label for="barn">Barn under 11 år:</label></li>
+                    
+                    <li><button id="submit" type="submit">Regn ut!</button></li>
+                </ul>
+                <ul class="box-right">
+                    <li><input type="number" name="lonnsinntekter" id="lonnsinntekter"></li>
+                    <li><input type="number" name="studielaan" id="studielaan" value="0"></li>
+                    <li><input type="number" name="studierente" id="studierente" value="2.599" step="0.001"></li>   
+                    <li><input type="number" name="boliglaan" id="boliglaan"></li>
+
+                    <li><input type="number" name="boligrente" id="boligrente" value="2" step="0.01"></li>
+                    <li><input type="number" name="boligbrok" id="boligbrok" value="50" step="0.1"></li>
+                    <li><input type="number" name="bankinnskudd" id="bankinnskudd" value="0"></li>
+                    <li><input type="number" name="innskuddsrente" id="innskuddsrente" value="1" step="0.01"></li>
+                    <li><input type="number" name="barn" id="barn" value="1"></li>      
+                    
+                    <li><input id="skt" value="Skatt i %" disabled></li>
+                    <!-- <li><input id="alminntekt" value="alm inntekt" disabled></li>
+                    <li><input id="sktgr" value="Skattegrunnlag" disabled></li>
+                    <li><input id="trygdeavgift" value="trygdeavgift" disabled></li>
+                    <li><input id="fellesskatt" value="fellesskatt" disabled></li>
+                    <li><input id="trinnskatt" value="trinnskatt" disabled></li>
+                    <li><input id="skattperaar" value="årlig skatt" disabled></li>
+                    <li><input id="skattpermnd" value="Skatt / 10,5 mnd" disabled></li> -->
+                </ul>
+            </form>
+        </section>
+        <footer>
+            <a href="about.html">About</a>
+            <p>skattetrekk 31.03.2020</p>
+            <a href="mailto:jangeorg85@gmail.com">Contact</a>
+        </footer>
+    </body>
+</html>
