@@ -277,14 +277,16 @@ input[type=number] {
     }
 
     .box-right li input {
-        width: 88%;
+        width: 85%;
         height: 75%;
         text-indent: 10px;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     #skt {
-        text-indent: 5px;
+        text-indent: 0;
+        text-align: center;
+        font-size: 14px;
     }
 
 }
