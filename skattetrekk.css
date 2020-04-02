@@ -240,6 +240,7 @@ input[type=number] {
     }
     .after-header p {
         font-size: 16px;
+        margin-bottom: .5em;
     }
 
     .menu-icon{
