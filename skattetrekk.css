@@ -111,7 +111,7 @@ nav ul li {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     z-index: 1;
     color: black;
     font-weight: 300;
@@ -119,7 +119,7 @@ nav ul li {
 
 .box-left li, .box-right li {
     list-style-type: none;
-    margin-left: -2.35em;
+    margin-left: -2em;
     margin-top: .5em;
     height: 3em;
     display: flex;
@@ -254,36 +254,31 @@ input[type=number] {
     }
     
      .mortgage-form {
-        width: 95%;
-        height: 95%;
+        width: 100%;
+        height: 100%;
     }
 
     .box-left li {
-        width: 135%;
+        width: 140%;
     }
 
     .box-right li {
-        width: 120%;
+        width: 115%;
     }
 
     .box-left li button {
         height: 80%;
         width: 95%;
         font-size: 16px;
+        margin-top: .1em;
     }
 
     .box-right li input {
-        width: 90%;
-        height: 75%;
-        text-indent: 12px;
-        font-size: 16px;
-    }
-
-    .box-right li input:last-child {
-        width: 90%;
+        width: 88%;
         height: 75%;
         text-indent: 5px;
-        font-size: 16px;
+        font-size: 14px;
     }
+
 }
 
