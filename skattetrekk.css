@@ -167,12 +167,17 @@ nav ul li {
     border-radius: 5px;
     border-style: none;
     outline: none; /* fjerner firkant rundt input når den er i focus */
-    font-size: 16px;
+    font-size: 18px;
     text-indent: 16px;
     letter-spacing: .5px;
     background-color: #d4cdf8;
     color: rgb(43, 43, 43);
 }
+
+#skt {
+    text-indent: 12px;
+}
+
 /* for å skru av arrows i numberfield input */
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -187,7 +192,6 @@ input[type=number] {
 .box-right input:hover {
     background-color: #c3bde2;
 }
-
 
 
 @media ( max-width: 1024px){
