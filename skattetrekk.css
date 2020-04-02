@@ -175,7 +175,8 @@ nav ul li {
 }
 
 #skt {
-    text-indent: 12px;
+    text-indent: 0;
+    text-align: center;
 }
 
 /* for å skru av arrows i numberfield input */
@@ -257,7 +258,7 @@ input[type=number] {
     }
     
      .mortgage-form {
-        width: 100%;
+        width: 90%;
         height: 100%;
     }
 
