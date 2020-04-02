@@ -125,7 +125,6 @@ nav ul li {
     display: flex;
     align-items: center;
     z-index: 2;
-    
 }
 .box-left li:last-child, .box-right li:last-child {
     margin-top: 2em;
@@ -276,8 +275,12 @@ input[type=number] {
     .box-right li input {
         width: 88%;
         height: 75%;
+        text-indent: 10px;
+        font-size: 16px;
+    }
+
+    #skt {
         text-indent: 5px;
-        font-size: 14px;
     }
 
 }
