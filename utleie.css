@@ -276,7 +276,7 @@ main > .box-calc:last-child input {
     }
 
     .box-calc {
-        height: 42em;
+        height: 44em;
         width: 24em; 
         border-left: none;
     }
