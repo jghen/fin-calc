@@ -280,8 +280,16 @@ main > .box-calc:last-child input {
         height: 44em;
         width: 24em; 
         border-left: none;
+    }
+    
+    .box-calc1 {
+        margin-bottom: 8em;
+    }
+
+    .box-calc2 {
         margin-bottom: 3em;
     }
+    
     .box-calc:hover {
         transform: scale(1.028);
     }
