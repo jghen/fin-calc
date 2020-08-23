@@ -1,0 +1,319 @@
+html, body {
+    margin: 0em;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background: #3c3176;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+}
+
+header {
+    width: 100%;
+    background-color: #3c3176; 
+    color: rgb(211, 211, 211); 
+    height: 3em;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+header a, footer a {
+    margin: 1em;
+    color: rgb(211, 211, 211);
+    align-self: center;
+}
+
+.menu-icon {
+    cursor: pointer;
+    float: right;
+    width: 1em;
+    height: 1em;
+    margin: 1em;
+}
+
+.nav {
+    display: none;
+}
+
+nav {
+    float: right;
+    background-color: #857DB1;
+    height: 100%;
+    width: 12em;
+    margin-top: 0;
+    position: relative;
+    z-index: 3;
+}
+
+nav ul {
+    margin-top: 3em;
+    list-style-type: none;
+    background-color: #5d5393;
+}
+
+nav ul li {
+    padding: 1em 0;
+    margin-left: -2.2em;
+    text-align: left;
+}
+
+.exit-btn {
+    width: .8em;
+    float: right;
+    padding: 0.5em;
+    margin: .7em .5em 0 0;
+    cursor: pointer;
+    background-color: #857DB1;
+}
+
+.after-header {
+    height: 20em;
+    display: flex;
+    align-items: flex-end;
+    margin: 1.5em 0 0.75em;
+}
+.after-header p {
+    color: rgb(211, 211, 211);
+    font-size: 42px;
+    padding: .2em .4em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #857DB1;
+    border-right: 2px solid #857DB1;
+    margin-bottom: 2em;
+}
+
+main{
+    display: flex;
+}
+
+.box-calc {
+    height: 44em;
+    width: 30em; 
+    background: #857DB1;
+    font-weight: 900;
+    border-radius: 1px;
+    transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    margin-bottom: 2em;
+    border-left: .5px solid rgb(238, 236, 255);
+   
+}
+
+.mortgage-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    color: black;
+    font-weight: 300;
+}
+
+.label {
+    margin: 1em auto 0 -3em;
+}
+
+.unit {
+    margin-left: .5em;
+    width: 100px;
+}
+
+.box li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3em;
+    margin: 0 auto 0 -3em;
+    z-index: 2;
+}
+
+.box li:last-child{
+    margin-bottom: 1em;
+}
+
+.box li input {
+    width: 200px;
+    height: 1.8em;
+    width: 100%;
+    border-radius: 2px;
+    border-style: none;
+    outline: none; /* fjerner firkant rundt input når den er i focus */
+    font-size: 18px;
+    text-indent: 5px;
+    text-emphasis: none;
+    letter-spacing: .5px;
+    background-color: #d4cdf8;
+    color: rgb(43, 43, 43);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9a90ca;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #9a90ca;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #9a90ca;
+  }
+
+/* for å skru av arrows i numberfield input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+/* for å skru av arrows i numberfield input i firefox */
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.box input:hover {
+    background-color: #ccc3fa;
+}
+
+main .box-calc:last-child input {
+    background: #857db1;
+}
+
+main .box-calc:last-child li {
+    margin-left: -1.5em;
+}
+
+main .box-calc:last-child li:first-child {
+    width: 102%;
+}
+
+main .box-calc:last-child input:first-child {
+    background: #3f3480;
+    color: rgb(238, 236, 255);
+    border-bottom: 1px solid rgb(238, 236, 255);
+}
+
+main .box-calc:last-child input:first-child:hover {
+    cursor: pointer;
+    border: 1px solid #3f3480;
+}
+
+main .box-calc:last-child p {
+    background: #857db1;
+    color: rgb(238, 236, 255);
+    width: 110%;
+}
+main > .box-calc:last-child li:nth-child(9), .box-calc:last-child li:nth-child(14) {
+    border-bottom: 1px solid rgb(238, 236, 255);
+    height: .5em;
+    width: 102%;
+    margin-left: -1.5em;
+}
+
+main > .box-calc:last-child input {
+    color: rgb(55, 50, 105);
+    text-align: center;
+}
+
+@media ( max-width: 1024px){
+
+    body {
+        font-size: 18px;
+    }
+    main{
+        display: block;
+    }
+
+    header h3 {
+        font-size: 20px;
+    }
+
+    .menu-icon{
+        width: 16px;
+        padding-left: 1em;
+    }
+
+    nav{
+        width: 11.66em;
+        margin-top: 0;
+    }
+
+    .box-calc {
+        height: 44em;
+        width: 26em; 
+    }
+
+    .box li input {
+        width: 90%;
+        height: 75%;
+        text-indent: 14px;
+    }
+}
+
+@media (max-width:640px){
+
+    body {
+        font-size: 16px;
+    }
+    .after-header p {
+        font-size: 16px;
+        margin-bottom: .5em;
+    }
+
+    main{
+        display: block;
+    }
+
+    .menu-icon{
+        width: 14px;
+        padding-left: .5em;
+    }
+
+    nav {
+        width: 12.1em;
+        margin-top: 0;
+    }
+
+    .box-calc {
+        height: 42em;
+        width: 24em; 
+        border-left: none;
+    }
+    .box-calc:hover {
+        transform: scale(1.028);
+    }
+     .mortgage-form {
+        width: 92%;
+        height: 100%;
+    }
+
+    main .box-calc  .box1  {
+        width: 100%;
+        margin-left: 1.5em;
+    }
+
+    main .box-calc  .box1 input  {
+        font-size: 16px;
+        text-indent: 5px;
+    }
+    main .box-calc  .box1 p  {
+        text-indent: 6px;
+    }
+
+    main .box-calc  .box2 li:first-child   {
+        width: 112%;
+        margin-left: -2.5em;
+        
+    }
+
+   
+
+}
+

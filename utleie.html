@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Financial calulators</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="utleie.css">
+        <script src="utleie.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Home</a>
+            <img onclick="hideOrToggleMenu()" class="menu-icon" id="menu" src="menu.svg" alt="menu" >
+            <nav class="nav" id="nav">
+                <img onclick="hideOrToggleMenu()" class="exit-btn" src="exit.svg" alt="exit-btn">
+                <ul>
+                    <li>
+                        <a href="utleie.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="skattetrekk.html">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Lånekalkulator</a>
+                    </li>
+                    <li>
+                        <a href="savings-calc.html">Sparekalkulator</a>
+                    </li>
+                    <li>
+                        <a href="retirement.html">Annen kalkulator</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="after-header">
+            <p>Utleiekalkulator</p>
+        </section>
+      <main>
+        <section class="box-calc" >
+            <div class="mortgage-form">
+                <ul class="box box1">
+                    <p class="label">Investering:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="totalpris" id="totalpris" placeholder="Totalpris ink. dokumentavgift"><p class="unit">kr</p></li>
+                    <li><input onchange="return utleieCalc()" type="number" name="studielaan" id="egenkapital" placeholder="Egenkapital"><p class="unit">kr</p></li>
+                    <p class="label">Lånevilkår:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="laanerente" id="laanerente" value="2.0" step="0.001"><p class="unit">%</p></li>   
+                    <li><input onchange="return utleieCalc()" type="number" name="nedbetalingstid" id="nedbetalingstid" placeholder="Nedbetalingstid, antall år"><p class="unit">år</p></li>
+                    <p class="label">Leieinntekt:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="leieinntekt" id="leieinntekt" placeholder="Leieinntekt per måned"><p class="unit">kr/mnd</p></li>
+                    <p class="label">Løpende kostnader:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="felleskostnader" id="felleskostnader" placeholder="Felleskostnader"><p class="unit">kr/mnd</p></li>
+                    <li><input onchange="return utleieCalc()" type="number" name="kommunale" id="kommunale" placeholder="Kommunale avgifter, årlig"><p class="unit">kr/år</p></li>
+                    <li><input onchange="return utleieCalc()" type="number" name="diverse" id="diverse" placeholder="Div. (forsikring, strøm etc.)"><p class="unit">kr/mnd</p></li>
+                    <p class="label">Avsetninger:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="vedlikehold" id="vedlikehold" placeholder="Vedlikehold, per år"><p class="unit">kr/år</p></li>      
+                    <li><input onchange="return utleieCalc()" type="number" name="ledighet" id="ledighet" placeholder="Ledighet, måneder per år"><p class="unit">mnd/år</p></li> 
+                </ul>
+            </form>
+        </section>
+        <section class="box-calc" >
+            <div class="mortgage-form">
+                <ul class="box box2">
+                    <li><input id="aarligavkastning" type="text" disabled></li>
+                    <li><p>Leieinntekt:</p><input id="utleiekost" disabled></li>
+                    <li><p>Felleskostnader:</p><input id="felleskost" disabled></li>
+                    <li><p>Kommunale avgifter:</p><input id="kommavg" disabled></li>
+                    <li><p>Diverse kostnader:</p><input id="divkost" disabled></li>
+                    <li><p>Ledighet:</p><input id="ledigkost" disabled></li>
+                    <li><p>Vedlikehold:</p><input id="vedlkost" disabled></li>
+                    <li><p>Skatt (22%):</p><input id="skattekost" disabled></li>
+                    <li></li>
+                    <li><p>Netto:</p><input id="nettokost" disabled></li>
+                    <li><p>Avdrag:</p><input id="avdragskost" disabled></li>
+                    <li><p>Renter:</p><input id="rentekost" disabled></li>
+                    <li><p>Rentefradrag:</p><input id="rentefradrag" disabled></li>
+                    <li></li>
+                    <li><p>Cashflow per mnd:</p><input id="cashflow" disabled></li>
+                </ul>
+            </form>
+        </section>
+      </main>
+        <footer>
+            <a href="#"><p>utleiekalkulator 23.08.2020</p></a>
+        </footer>
+    </body>
+</html>
