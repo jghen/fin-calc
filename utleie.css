@@ -242,6 +242,7 @@ main > .box-calc:last-child input {
     .box-calc {
         height: 44em;
         width: 26em; 
+        margin-bottom: 4em;
     }
 
     .box li input {
@@ -279,6 +280,7 @@ main > .box-calc:last-child input {
         height: 44em;
         width: 24em; 
         border-left: none;
+        margin-bottom: 3em;
     }
     .box-calc:hover {
         transform: scale(1.028);
