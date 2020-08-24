@@ -91,16 +91,16 @@ function utleieCalc(){
  
     document.getElementById('aarligavkastning').value = "Årlig avkastning på EK: " + avkastning + " %";
     document.getElementById('utleiekost').value = ut;
-    document.getElementById('felleskost').value = "-" + fkost;
-    document.getElementById('kommavg').value = "-" + kavg;
-    document.getElementById('divkost').value = "-" + dkost;
-    document.getElementById('ledigkost').value = "-" + lkost;
-    document.getElementById('vedlkost').value = "-" + vkost;
-    document.getElementById('skattekost').value = "-" + skost;
-    document.getElementById('nettokost').value = "=" + nkost;
-    document.getElementById('avdragskost').value = "-" + akost;
-    document.getElementById('rentekost').value = "-" + rkost;
-    document.getElementById('rentefradrag').value = "+" + rfradrag;
+    document.getElementById('felleskost').value = "- " + fkost;
+    document.getElementById('kommavg').value = "- " + kavg;
+    document.getElementById('divkost').value = "- " + dkost;
+    document.getElementById('ledigkost').value = "- " + lkost;
+    document.getElementById('vedlkost').value = "- " + vkost;
+    document.getElementById('skattekost').value = "- " + skost;
+    document.getElementById('nettokost').value = "= " + nkost;
+    document.getElementById('avdragskost').value = "- " + akost;
+    document.getElementById('rentekost').value = "- " + rkost;
+    document.getElementById('rentefradrag').value = "+ " + rfradrag;
     document.getElementById('cashflow').value = cash;
     
 
