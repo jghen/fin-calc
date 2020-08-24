@@ -1,5 +1,5 @@
 html, body {
-    margin: 0em;
+    margin: 0;
     height: 100%;
     width: 100%;
     font-size: 20px;
@@ -40,7 +40,6 @@ header a, footer a {
 }
 
 nav {
-    float: right;
     background-color: #857DB1;
     height: 100%;
     width: 12em;
@@ -57,7 +56,7 @@ nav ul {
 
 nav ul li {
     padding: 1em 0;
-    margin-left: -2.2em;
+    margin-left: -2.5em;
     text-align: left;
 }
 
@@ -81,8 +80,6 @@ nav ul li {
     font-size: 42px;
     padding: .2em .4em;
     text-transform: uppercase;
-    border-bottom: 2px solid #857DB1;
-    border-right: 2px solid #857DB1;
     margin-bottom: 2em;
 }
 
@@ -102,12 +99,9 @@ main{
     align-items: center;
     z-index: 0;
     margin-bottom: 2em;
-    border-left: .5px solid rgb(238, 236, 255);
-   
 }
 .box-calc2 {
     background: #3c3176;
-    border: .5px solid rgb(238, 236, 255);
 }
 
 .mortgage-form {
@@ -229,6 +223,58 @@ main > .box-calc:last-child input {
     text-align: center;
 }
 
+@media ( max-width: 1640px){
+    .box-calc {
+        height: 40em;
+        width: 22em; 
+    }
+    .box2 p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    main .box2 input {
+        font-size: 15px;
+        margin: 1em 1em 0 auto;
+        
+    }
+    main > .box-calc:last-child input {
+        text-align: end;
+    }
+
+    main .box1 input {
+        font-size: 15px;
+    }
+    main .box1 li {
+        height: 2.8em;
+    }
+    .label {
+        margin: 1em auto .4em -3.4em;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .tooltip {
+        margin: -.4em auto -1.2em -5em;
+        font-weight: 500;
+        font-size: 11px;
+    }
+    
+    .unit {
+        margin-left: .5em;
+        width: 100px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    main .box2 li:first-child {
+        margin: 0em  auto -.5em -2.8em;
+    }
+    main .box2 li {
+        height: 2.1em;
+        margin: .5em auto 0 auto;
+    }
+}
+
 @media ( max-width: 1024px){
 
     body {
@@ -253,7 +299,7 @@ main > .box-calc:last-child input {
     }
 
     .box-calc {
-        height: 44em;
+        height: 50em;
         width: 26em; 
     }
 
@@ -261,6 +307,26 @@ main > .box-calc:last-child input {
         width: 90%;
         height: 75%;
         text-indent: 14px;
+    }
+
+
+    .label {
+        margin: 1em auto .2em -2.8em;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    
+    .tooltip {
+        margin: 0 auto -.5em -4.5em;
+        font-weight: 500;
+        font-size: 11px;
+    }
+    
+    .unit {
+        margin-left: .5em;
+        width: 100px;
+        font-size: 12px;
+        font-weight: 500;
     }
 }
 
@@ -272,7 +338,6 @@ main > .box-calc:last-child input {
     }
 
     header {
-        width: 90%;
         margin: 0;
     }
 
@@ -287,7 +352,6 @@ main > .box-calc:last-child input {
 
     .menu-icon{
         width: 14px;
-        padding-left: .5em;
     }
 
     nav {
@@ -295,16 +359,18 @@ main > .box-calc:last-child input {
         margin-top: 0;
     }
 
+    .box-calc {
+        width: 96vw; 
+    }
+
     .box-calc1 {
         height: 52em;
-        width: 100%; 
         margin: 1em 0 0 ;
         border: none;
     }
 
-    .box-calc2 {
+    .box-calc2 { 
         height: 40em;
-        width: 100%; 
         border: none;
     }
     
