@@ -211,16 +211,12 @@ main .box-calc:last-child li:first-child {
     width: 102%;
 }
 
-main .box-calc:last-child input:first-child {
-    border-bottom: 1px solid rgb(238, 236, 255);
-}
-
 main .box-calc:last-child p {
     background: #3c3176;
     color: rgb(238, 236, 255);
     width: 110%;
 }
-main > .box-calc:last-child li:nth-child(9), .box-calc:last-child li:nth-child(14) {
+main >.box-calc:last-child li:nth-child(2), .box-calc:last-child li:nth-child(10), .box-calc:last-child li:nth-child(15) {
     border-bottom: 1px solid rgb(238, 236, 255);
     height: .5em;
     width: 102%;
@@ -272,7 +268,14 @@ main > .box-calc:last-child input {
 
     body {
         font-size: 16px;
+        margin: 0;
     }
+
+    header {
+        width: 90%;
+        margin: 0;
+    }
+
     .after-header p {
         font-size: 16px;
         margin-bottom: .5em;
@@ -292,25 +295,19 @@ main > .box-calc:last-child input {
         margin-top: 0;
     }
 
-    .box-calc {
-        height: 58em;
-        width: 24em; 
-    }
-
-    .box-calc2 {
-        height: 44em;
-    }
     .box-calc1 {
-        margin: .5em 0;
+        height: 52em;
+        width: 100%; 
+        margin: 1em 0 0 ;
+        border: none;
     }
 
     .box-calc2 {
-        margin-bottom: 3em;
+        height: 40em;
+        width: 100%; 
+        border: none;
     }
-
-    .box-calc:hover {
-        transform: scale(1.028);
-    }
+    
      .mortgage-form {
         width: 92%;
         height: 100%;
@@ -331,7 +328,7 @@ main > .box-calc:last-child input {
     }
 
     .label {
-        margin: 1.8em auto .8em -2.8em;
+        margin: 1em auto .2em -2.8em;
         font-size: 17px;
         font-weight: 600;
     }
@@ -350,13 +347,13 @@ main > .box-calc:last-child input {
     }
     
     .box2 p{
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 400;
         
     }
 
     main .box2 input {
-        font-size: 14px;
+        font-size: 15px;
         margin: 0 1em 0 auto;
         
     }
@@ -375,10 +372,22 @@ main > .box-calc:last-child input {
     }
     
     main .box2 li:first-child {
-        margin: 3em  auto auto -1em;
+        margin: 2.5em  auto -.5em -1.6em;
     }
 
+    footer {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        background: #857DB1;
+    }
 
+    footer a {
+        font-size: 15px;
+        color: #3c3176;
+        text-decoration: none;
+        font-weight: 700;
+    }
    
 
 }
