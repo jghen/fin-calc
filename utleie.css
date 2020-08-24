@@ -293,11 +293,15 @@ main > .box-calc:last-child input {
     }
 
     .box-calc {
-        height: 52em;
+        height: 58em;
         width: 24em; 
     }
+
+    .box-calc2 {
+        height: 44em;
+    }
     .box-calc1 {
-        margin: 1em 0;
+        margin: .5em 0;
     }
 
     .box-calc2 {
@@ -319,7 +323,7 @@ main > .box-calc:last-child input {
     }
 
     main .box-calc  .box1 input  {
-        font-size: 14px;
+        font-size: 13px;
         height: 60%;
         text-indent: 5px;
     }
@@ -333,7 +337,7 @@ main > .box-calc:last-child input {
     }
 
     .label {
-        margin: 1.2em auto .3em -2.8em;
+        margin: 1.8em auto .8em -2.8em;
         font-size: 17px;
         font-weight: 600;
     }
@@ -347,7 +351,7 @@ main > .box-calc:last-child input {
     .unit {
         margin-left: .5em;
         width: 100px;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 500;
     }
     
