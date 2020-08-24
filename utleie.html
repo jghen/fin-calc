@@ -28,10 +28,7 @@
                         <a href="savings-calc.html">Sparekalkulator</a>
                     </li>
                     <li>
-                        <a href="retirement.html">Pensjonskalkulator</a>
-                    </li>
-		    <li>
-                        <a href="skattetrekk.html">Skattekalkulator</a>
+                        <a href="retirement.html">Annen kalkulator</a>
                     </li>
                 </ul>
             </nav>
@@ -44,20 +41,30 @@
             <div class="mortgage-form">
                 <ul class="box box1">
                     <p class="label">Investering:</p>
-                    <li><input onchange="return utleieCalc()" type="number" name="totalpris" id="totalpris" placeholder="Totalpris ink. dokumentavgift"><p class="unit">kr</p></li>
-                    <li><input onchange="return utleieCalc()" type="number" name="studielaan" id="egenkapital" placeholder="Egenkapital"><p class="unit">kr</p></li>
+                    <p class=" tooltip">Totalpris ink. dokumentavgift:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="totalpris" id="totalpris" placeholder=""><p class="unit">kr</p></li>
+                    <p class=" tooltip">Egenkapital:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="studielaan" id="egenkapital" placeholder=""><p class="unit">kr</p></li>
                     <p class="label">Lånevilkår:</p>
+                    <p class=" tooltip">Rente:</p>
                     <li><input onchange="return utleieCalc()" type="number" name="laanerente" id="laanerente" value="2.0" step="0.001"><p class="unit">%</p></li>   
-                    <li><input onchange="return utleieCalc()" type="number" name="nedbetalingstid" id="nedbetalingstid" placeholder="Nedbetalingstid, antall år" value="30"><p class="unit">år</p></li>
+                    <p class=" tooltip">Nedbetalingstid, år:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="nedbetalingstid" id="nedbetalingstid" value="30"><p class="unit">år</p></li>
                     <p class="label">Leieinntekt:</p>
-                    <li><input onchange="return utleieCalc()" type="number" name="leieinntekt" id="leieinntekt" placeholder="Leieinntekt per måned"><p class="unit">kr/mnd</p></li>
+                    <p class=" tooltip">Husleie:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="leieinntekt" id="leieinntekt" placeholder=""><p class="unit">kr/mnd</p></li>
                     <p class="label">Løpende kostnader:</p>
-                    <li><input onchange="return utleieCalc()" type="number" name="felleskostnader" id="felleskostnader" placeholder="Felleskostnader"><p class="unit">kr/mnd</p></li>
-                    <li><input onchange="return utleieCalc()" type="number" name="kommunale" id="kommunale" placeholder="Årlige kommunale avgifter"><p class="unit">kr/år</p></li>
-                    <li><input onchange="return utleieCalc()" type="number" name="diverse" id="diverse" placeholder="Div. (forsikring, strøm etc.)"><p class="unit">kr/mnd</p></li>
+                    <p class=" tooltip">Felleskostnader:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="felleskostnader" id="felleskostnader" placeholder=""><p class="unit">kr/mnd</p></li>
+                    <p class=" tooltip">Kommunale avgifter, årlig:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="kommunale" id="kommunale" placeholder=""><p class="unit">kr/år</p></li>
+                    <p class=" tooltip">Diverse (forsikring etc):</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="diverse" id="diverse" placeholder=""><p class="unit">kr/mnd</p></li>
                     <p class="label">Avsetninger:</p>
-                    <li><input onchange="return utleieCalc()" type="number" name="vedlikehold" id="vedlikehold" placeholder="Vedlikehold, per år"><p class="unit">kr/år</p></li>      
-                    <li><input onchange="return utleieCalc()" type="number" name="ledighet" id="ledighet" placeholder="Ledighet, måneder per år"><p class="unit">mnd/år</p></li> 
+                    <p class=" tooltip">Årlig vedlikehold:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="vedlikehold" id="vedlikehold" placeholder=""><p class="unit">kr/år</p></li>      
+                    <p class=" tooltip">Måneder uten leieinntekt:</p>
+                    <li><input onchange="return utleieCalc()" type="number" name="ledighet" id="ledighet" placeholder=""><p class="unit">mnd/år</p></li> 
                 </ul>
             </form>
         </section>
