@@ -100,9 +100,6 @@ main{
     z-index: 0;
     margin-bottom: 2em;
 }
-.box-calc2 {
-    background: #3c3176;
-}
 
 .mortgage-form {
     height: 100%;
@@ -170,7 +167,7 @@ main{
     color: #3c3176;
 }
 /* ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ 
-    color: #9a90ca;
+    color: #9a90ca; #352a6b
     opacity: 1; /* Firefox
   }
   
@@ -206,7 +203,6 @@ main .box-calc:last-child li:first-child {
 }
 
 main .box-calc:last-child p {
-    background: #3c3176;
     color: rgb(238, 236, 255);
     width: 110%;
 }
@@ -218,9 +214,11 @@ main >.box-calc:last-child li:nth-child(2), .box-calc:last-child li:nth-child(10
 }
 
 main > .box-calc:last-child input {
-    background: #3c3176;
     color: rgb(238, 236, 255);
     text-align: center;
+}
+.box-calc2, .box-calc2 .box2 li input, .box-calc2 .box2 li p{
+    background: #352a6b;
 }
 
 @media ( max-width: 1640px){
@@ -332,13 +330,15 @@ main > .box-calc:last-child input {
 
 @media (max-width:640px){
 
-    body {
+    html, body {
         font-size: 16px;
         margin: 0;
+        background: #352a6b;
     }
 
     header {
         margin: 0;
+        background: #352a6b;
     }
 
     .after-header p {
@@ -366,12 +366,10 @@ main > .box-calc:last-child input {
     .box-calc1 {
         height: 52em;
         margin: 1em 0 0 ;
-        border: none;
     }
 
     .box-calc2 { 
         height: 40em;
-        border: none;
     }
     
      .mortgage-form {
@@ -388,6 +386,7 @@ main > .box-calc:last-child input {
         font-size: 13px;
         height: 60%;
         text-indent: 5px;
+        color: #281e55;
     }
     main .box-calc  .box1 p  {
         text-indent: 6px;
@@ -397,6 +396,7 @@ main > .box-calc:last-child input {
         margin: 1em auto .2em -2.8em;
         font-size: 17px;
         font-weight: 600;
+        color: #281e55;
     }
     
     .tooltip {
@@ -450,7 +450,7 @@ main > .box-calc:last-child input {
 
     footer a {
         font-size: 15px;
-        color: #3c3176;
+        color: #281e55;
         text-decoration: none;
         font-weight: 700;
     }
