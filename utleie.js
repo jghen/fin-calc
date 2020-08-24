@@ -101,7 +101,7 @@ function utleieCalc(){
     document.getElementById('avdragskost').value = "- " + akost;
     document.getElementById('rentekost').value = "- " + rkost;
     document.getElementById('rentefradrag').value = "+ " + rfradrag;
-    document.getElementById('cashflow').value = cash;
+    document.getElementById('cashflow').value = "= " + cash;
     
 
     return false;
