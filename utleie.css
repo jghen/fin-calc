@@ -306,7 +306,6 @@ main > .box-calc:last-child input {
 
     .box-calc2 {
         margin-bottom: 3em;
-        
     }
 
     .box-calc:hover {
@@ -331,11 +330,6 @@ main > .box-calc:last-child input {
         text-indent: 6px;
     }
 
-    main .box-calc  .box2 li:first-child   {
-        width: 112%;
-        margin-left: -2.5em;
-    }
-
     .label {
         margin: 1.8em auto .8em -2.8em;
         font-size: 17px;
@@ -358,16 +352,32 @@ main > .box-calc:last-child input {
     .box2 p{
         font-size: 14px;
         font-weight: 400;
+        
     }
 
     main .box2 input {
         font-size: 14px;
+        margin: 0 1em 0 auto;
+        
+    }
+    main > .box-calc:last-child input {
+        text-align: end;
+    }
+
+    main .box2 li {
+        height: 2em;
+        margin: .5em auto 0 auto;
     }
 
     main .box2 input:first-child {
         font-size: 18px;
+        text-align: center;
     }
     
+    main .box2 li:first-child {
+        margin: 3em  auto auto -1em;
+    }
+
 
    
 
