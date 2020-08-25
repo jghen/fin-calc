@@ -336,14 +336,13 @@ main > .box-calc:last-child input {
         background: #352a6b;
     }
 
-    header {
+    header, .after-header {
         margin: 0;
         background: #352a6b;
     }
 
     .after-header p {
         font-size: 16px;
-        margin-bottom: .5em;
     }
 
     main{
