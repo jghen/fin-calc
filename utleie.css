@@ -13,11 +13,12 @@ html, body {
 
 header {
     width: 100%;
-    background-color: #3c3176; 
-    color: rgb(211, 211, 211); 
     height: 5em;
+    background-color: #3c3176; 
+    color: rgb(211, 211, 211);
     display: inline-flex;
     justify-content: space-between;
+    border-bottom: 1px solid #857DB1;
     /*position: fixed;*/
 }
 
