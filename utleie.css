@@ -13,7 +13,7 @@ html, body {
 
 header {
     width: 100%;
-    height: 5em;
+    height: 4em;
     background-color: #3c3176; 
     color: rgb(211, 211, 211);
     display: inline-flex;
