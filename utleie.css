@@ -59,12 +59,18 @@ nav ul li {
     margin-left: -2.5em;
     text-align: left;
 }
+nav a {
+    text-decoration-line: none;
+}
+nav a:hover{
+    font-weight: 900;
+}
 
 .exit-btn {
     width: .8em;
     float: right;
     padding: 0.5em;
-    margin: .7em .5em 0 0;
+    margin: 1.2em .5em 0 0;
     cursor: pointer;
     background-color: #857DB1;
 }
