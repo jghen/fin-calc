@@ -16,7 +16,7 @@ header, footer {
     width: 100%;
     background-color: #3c3176; 
     color: rgb(211, 211, 211); 
-    height: 3em;
+    height: 4em;
     display: inline-flex;
     justify-content: space-between;
 }
