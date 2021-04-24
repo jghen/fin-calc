@@ -4,7 +4,8 @@ html, body {
     width: 100%;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    background: #3c3176;
+    /*background: #3c3176;*/
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
