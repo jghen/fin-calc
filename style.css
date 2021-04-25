@@ -76,11 +76,11 @@ nav ul li {
 }
 
 .after-header {
+    margin-top: 4em;
     display: flex;
     flex-direction:column;
     justify-content: flex-end;
     align-items: center;
-    border: 1px solid black;
 }
 
 .box-calc {
