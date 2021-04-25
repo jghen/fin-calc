@@ -75,7 +75,7 @@ nav ul li {
 }
 
 .after-header {
-    height: 10em;
+    height: 5em;
     display: flex;
     flex-direction:column;
     justify-content: flex-end;
