@@ -14,7 +14,7 @@ html, body {
 
 header, footer {
     width: 100%;
-    height: 4em;
+    height: 3em;
     background-color: #3c3176; 
     color: rgb(211, 211, 211);
     display: inline-flex;
@@ -48,14 +48,14 @@ nav {
 }
 
 nav ul {
-    margin-top: 4em;
+    margin-top: 3em;
+    padding: 0;
     list-style-type: none;
     background-color: #5d5393;
 }
 
-nav ul li {
+nav li {
     padding: 1em 0;
-    margin-left: -2.5em;
     text-align: left;
 }
 nav a {
@@ -69,7 +69,7 @@ nav a:hover{
     width: .8em;
     float: right;
     padding: 0.5em;
-    margin: 1.2em .5em 0 0;
+    margin: 0.8em .5em 0 0;
     cursor: pointer;
     background-color: #857DB1;
 }
