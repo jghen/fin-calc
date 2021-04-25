@@ -80,12 +80,13 @@ nav ul li {
     flex-direction:column;
     justify-content: flex-end;
     align-items: center;
+    border: 1px solid black;
 }
 
 .box-calc {
     height: 20em;
     width: 30em; 
-    margin: 1em auto;
+    margin: auto;
     background: linear-gradient(to top left,#ff6347, rgb(255, 103, 77), rgb(250, 125, 102)); 
     color: rgb(253, 231, 231);
     border-radius: 10px;
