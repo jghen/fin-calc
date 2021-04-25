@@ -4,8 +4,7 @@ html, body {
     width: 100%;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    /*background: #3c3176;*/
-    background: #ffffff;
+    background: #3c3176;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -14,12 +13,11 @@ html, body {
 
 header {
     width: 100%;
-    height: 4em;
     background-color: #3c3176; 
-    color: rgb(211, 211, 211);
+    color: rgb(211, 211, 211); 
+    height: 3em;
     display: inline-flex;
     justify-content: space-between;
-    /*position: fixed;*/
 }
 
 header a, footer a {
@@ -30,7 +28,6 @@ header a, footer a {
 
 .menu-icon {
     cursor: pointer;
-    float: right;
     width: 1em;
     margin: 1em;
 }
@@ -43,20 +40,19 @@ nav {
     background-color: #857DB1;
     height: 100%;
     width: 12em;
-    margin-top: 0;
     position: relative;
     z-index: 3;
 }
 
 nav ul {
-    margin-top: 4em;
+    margin-top: 3em;
     list-style-type: none;
+    padding: 0;
     background-color: #5d5393;
 }
 
-nav ul li {
+nav li {
     padding: 1em 0;
-    margin-left: -2.5em;
     text-align: left;
 }
 nav a {
@@ -70,9 +66,9 @@ nav a:hover{
     width: .8em;
     float: right;
     padding: 0.5em;
-    margin: 1.2em .5em 0 0;
+    margin: .8em .5em 0 0;
     cursor: pointer;
-    background-color: #857DB1;
+    /* background-color: #857DB1; */
 }
 
 .after-header {
@@ -100,11 +96,28 @@ main{
     font-weight: 900;
     border-radius: 1px;
     transition: all .3s ease-in-out;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; removed becaus of new buttons */
     z-index: 0;
     margin-bottom: 2em;
+}
+
+.box-calc2 button {
+    border: none;
+    font-size: 14px;
+    padding: .7em;
+    outline: none;
+}
+
+.button-on {
+    background: rgb(53,42,107);
+    color: rgb(212, 205, 248);
+}
+
+.button-off {
+    background: rgb(133,125,177);
+    color: rgb(29, 21, 68);
 }
 
 .mortgage-form {
@@ -115,10 +128,11 @@ main{
     align-items: center;
     z-index: 1;
     font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .label {
-    margin: 1em auto .5em -2.5em;
+    margin: 1em auto 1em -2.5em;
     font-size: 22px;
     font-weight: 900;
     color: #3c3176;
@@ -150,6 +164,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     height: 3em;
+    width: 18em;
     margin: 0 auto 0 -3em;
     z-index: 2;
 }
@@ -171,6 +186,7 @@ main{
     letter-spacing: .5px;
     background-color: #d4cdf8;
     color: #3c3176;
+    margin-top: .2em;
 }
 /* ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ 
     color: #9a90ca; #352a6b
