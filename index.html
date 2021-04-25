@@ -6,15 +6,15 @@
         <title>Financial calulators</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
     </head>
     <body>
+        <div class="blurred" onclick="toggleMenu()"></div>
         <header>
             <a href="index.html">Home</a>
             <h3 id="h3center">Financial calculators</h3>
-            <img onclick="hideOrToggleMenu()" class="menu-icon" id="menu" src="menu.svg" alt="menu" >
+            <img onclick="toggleMenu()" class="menu-icon" id="menu" src="menu.svg" alt="menu" >
             <nav class="nav" id="nav">
-                <img onclick="hideOrToggleMenu()" class="exit-btn" src="exit.svg" alt="exit-btn">
+                <img onclick="toggleMenu()" class="exit-btn" src="exit.svg" alt="exit-btn">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -64,5 +64,6 @@
             <p>Jan georg Henriksen - calc 22.03.2020</p>
             <a href="mailto:jangeorg85@gmail.com">Contact</a>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>

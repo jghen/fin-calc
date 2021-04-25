@@ -11,6 +11,14 @@ html, body {
     align-items: center;
     position: absolute;
 }
+.blurred {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background: #7c7c8160;
+    display: none;
+}
 
 header, footer {
     width: 100%;

@@ -1,20 +1,25 @@
-function hideOrToggleMenu() {
+function toggleMenu() {
 
     const nav = document.getElementById('nav');
     const menu = document.getElementById('menu');
     const h3 = document.getElementById('h3center');
+    const blur = document.querySelector('.blurred');
 
     if (nav.style.display === 'block') {
         nav.style.display = 'none';
         menu.style.display = 'block';
         h3.style.margin = 'inherit';
+        blur.style.display = 'none';
 
     } else {
         nav.style.display = 'block';
         menu.style.display = 'none';
         h3.style.marginRight = '-7rem';
+        blur.style.display = 'block';
     }
 }
+
+
 //neds jquery to work 
 function commaSeparateNumber(index, val) {
     val = val.replace(/\D/g, '');
@@ -152,3 +157,4 @@ function retirementYearly (){
 
     return false;
 }
+

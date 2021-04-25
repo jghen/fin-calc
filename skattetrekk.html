@@ -9,11 +9,12 @@
         <script src="skattetrekk.js"></script>
     </head>
     <body>
+        <div class="blurred" onclick="toggleMenu()"></div>
         <header>
             <a href="index.html">Home</a>
-            <img onclick="hideOrToggleMenu()" class="menu-icon" id="menu" src="menu.svg" alt="menu" >
+            <img onclick="toggleMenu()" class="menu-icon" id="menu" src="menu.svg" alt="menu" >
             <nav class="nav" id="nav">
-                <img onclick="hideOrToggleMenu()" class="exit-btn" src="exit.svg" alt="exit-btn">
+                <img onclick="toggleMenu()" class="exit-btn" src="exit.svg" alt="exit-btn">
                 <ul>
                     <li>
                         <a href="skattetrekk.html">Home</a>

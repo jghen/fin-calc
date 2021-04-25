@@ -1,15 +1,18 @@
-function hideOrToggleMenu() {
+function toggleMenu() {
 
     const nav = document.getElementById('nav');
     const menu = document.getElementById('menu');
+    const blur = document.querySelector('.blurred');
 
     if (nav.style.display === 'block') {
         nav.style.display = 'none';
         menu.style.display = 'block';
+        blur.style.display = 'none';
 
     } else {
         nav.style.display = 'block';
         menu.style.display = 'none';
+        blur.style.display = 'block';
     }
 }
 function taxCalc(){
