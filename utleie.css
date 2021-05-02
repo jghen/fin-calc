@@ -37,7 +37,8 @@ header a, footer a {
 .menu-icon {
     cursor: pointer;
     width: 1em;
-    margin: 1em;
+    height: 1.6em;
+    margin: .6em .9em;
 }
 
 .nav {
@@ -45,7 +46,7 @@ header a, footer a {
 }
 
 nav {
-    background-color: #857DB1;
+    background-color: #2d245f;
     height: 100%;
     width: 12em;
     position: relative;
@@ -56,7 +57,7 @@ nav ul {
     margin-top: 3em;
     list-style-type: none;
     padding: 0;
-    background-color: #5d5393;
+    background-color: #2d245f;
 }
 
 nav li {
@@ -74,7 +75,7 @@ nav a:hover{
     width: .8em;
     float: right;
     padding: 0.5em;
-    margin: .8em .5em 0 0;
+    margin: .6em .5em 0 0;
     cursor: pointer;
     /* background-color: #857DB1; */
 }
