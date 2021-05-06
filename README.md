@@ -1,4 +1,5 @@
-# financial-calculators:
+# financial-calculators
+This static site contains multiple financial calculators for your personal finances. 
 
 # Mortgage calculator
 Considering refinancing your mortgage?
