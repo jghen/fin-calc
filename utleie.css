@@ -3,7 +3,7 @@ body {
     margin: 0;
     height: 100%;
     width: 100%;
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     background: #3c3176;
     display: flex;
@@ -105,8 +105,8 @@ main {
 }
 
 .box-calc {
-    height: 50em;
     width: 30em;
+    height: 60em;
     background: #857DB1;
     font-weight: 900;
     border-radius: 1px;
@@ -148,14 +148,13 @@ main {
 
 .label {
     margin: 1em auto 1em -2.5em;
-    font-size: 22px;
     font-weight: 900;
     color: #3c3176;
 }
 
 .tooltip {
-    margin: 0 auto -.8em -4.8em;
-    font-size: 12px;
+    margin: 0 auto -.5em -4.2em;
+    font-size: 16px;
     font-style: italic;
     font-weight: 500;
     color: rgb(238, 236, 255);
@@ -179,7 +178,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     height: 3em;
-    width: 18em;
+    width: 19em;
     margin: 0 auto 0 -3em;
     z-index: 2;
 }
@@ -190,7 +189,7 @@ main {
 
 .box li input {
     width: 200px;
-    height: 1.8em;
+    height: 2.5em;
     width: 100%;
     border-radius: 2px;
     border-style: none;
@@ -329,6 +328,8 @@ main>.box-calc:last-child input {
 
     body {
         font-size: 18px;
+        width: 100%;
+        height: 100%;
     }
 
     main {
@@ -349,33 +350,48 @@ main>.box-calc:last-child input {
         margin-top: 0;
     }
 
-    .box-calc {
-        height: 50em;
-        width: 26em;
+    .box-calc1 {
+        height: fit-content;
+    }
+
+    .box li {
+        margin: .3em auto .5em -4em;
     }
 
     .box li input {
         width: 90%;
         height: 75%;
         text-indent: 14px;
+        margin-left: 2em;
     }
 
+    .box-calc2 li input {
+        margin: 0;
+    }
+
+    .box2 li input:nth-child(1) {
+        width: 18em;
+    }
+    
+    .box2 li {
+        width: 100%;
+    }
 
     .label {
-        margin: 1em auto .2em -2.8em;
+        margin: 1em auto .2em -2em;
         font-size: 17px;
         font-weight: 600;
     }
 
     .tooltip {
-        margin: 0 auto -.5em -4.5em;
+        margin: 0 auto -.5em -3em;
         font-weight: 500;
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .unit {
         margin-left: .5em;
-        width: 100px;
+        width: 75px;
         font-size: 12px;
         font-weight: 500;
     }
@@ -413,34 +429,30 @@ main>.box-calc:last-child input {
         margin-top: 0;
     }
 
-    .box-calc {
-        width: fit-content;
-    }
-
     .box-calc1 {
-        height: 50em;
+        height: 60em;
+        width: 100%;
     }
 
     .box-calc2 {
         height: 42em;
     }
 
-    .mortgage-form {
-        height: 100%;
-        width: fit-content;
-        padding: 3em;
-    }
-
     .box1 {
-        width: 100%;
-        margin-top: -5em;
+        width: 18em;
+        margin: 0;
     }
 
-    .box1 input {
-        font-size: 13px;
+    .box1 li input {
+        font-size: 15px;
         text-indent: 5px;
         color: #281e55;
-        margin-left: .5em;
+        margin-left: .2em;
+        width: 17em;
+    }
+    .box1 li {
+        margin-left: -2.5em;
+        width: fit-content;
     }
 
     .box1 p {
@@ -451,43 +463,38 @@ main>.box-calc:last-child input {
         font-size: 17px;
         font-weight: 600;
         color: #281e55;
+        margin-left: -2.5em;
     }
 
     .tooltip {
-        margin-bottom: -.4em;
+        margin: auto auto -.3em -3.15em;
         font-weight: 500;
-        font-size: 11px;
+        font-size: 14px;
     }
 
     .unit {
-        margin-left: .5em;
-        width: 100px;
-        font-size: 12px;
+        margin-left: -.2em;
+        width: fit-content;
+        font-size: 14px;
         font-weight: 500;
     }
     .box2 {
         margin-top: -5em;
+        margin: 0;
     }
 
     .box2 p {
         font-size: 15px;
         font-weight: 400;
-
     }
 
-    .box2 input {
-        font-size: 15px;
-        margin: 0 1em 0 auto;
-
+    .box2 li input {
+        font-size: 14px;
+        width: 5em;
     }
 
     .box-calc:last-child input {
         text-align: end;
-    }
-
-    main .box2 li {
-        height: 2em;
-        margin: .5em auto 0 auto;
     }
 
     main .box2 input:first-child {
