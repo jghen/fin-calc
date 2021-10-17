@@ -30,7 +30,7 @@ function taxCalc(){
 
     //convert to number
     const lonn = parseFloat(UIlonn);
-   const slan = parseFloat(UIslan);
+    const slan = parseFloat(UIslan);
     const srente = parseFloat(UIsrente) / 100;
     const blan = parseFloat(UIblan);
 
@@ -51,17 +51,17 @@ function taxCalc(){
     }else if (barn===1){
         foreldrefradrag = 12500;
     }else {
-        foreldrefradrag = 12500 + 7500 * barn;
+        foreldrefradrag = 12500 + 12500 * barn;
     }
  
     const renteinntekter = binnskudd * irente;
     const personfradrag = 56550;
 
     //trinnnskatt
-    const trinn1nedre = 180800;
-    const trinn2nedre = 254500;
-    const trinn3nedre = 639750;
-    const trinn4nedre = 999550;
+    const trinn1nedre = 184800;
+    const trinn2nedre = 260100;
+    const trinn3nedre = 651250;
+    const trinn4nedre = 1021550;
     let trinn1ovre;
     let trinn2ovre;
     let trinn3ovre;
@@ -81,8 +81,8 @@ function taxCalc(){
     trinn3gr = (bruttoinntekt > trinn3nedre) ? trinn3ovre - trinn3nedre : 0;
     trinn4gr = (bruttoinntekt > trinn4nedre) ? trinn4ovre - trinn4nedre : 0;
     
-    const trinn1 = trinn1gr * 1.9 / 100;
-    const trinn2 = trinn2gr * 4.2 / 100;
+    const trinn1 = trinn1gr * 1.7 / 100;
+    const trinn2 = trinn2gr * 4.0 / 100;
     const trinn3 = trinn3gr * 13.2 / 100;
     const trinn4 = trinn4gr * 16.2 / 100;
     //trinnskatt ferdig:
