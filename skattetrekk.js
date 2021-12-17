@@ -43,7 +43,7 @@ function taxCalc(){
     //outputs
     const bruttoinntekt = lonn;
     const gjeldsrenter = blan * brente * bbrok + slan * srente;
-    const minstefradrag = 104450;
+    const minstefradrag = 104716;
     let foreldrefradrag;
     //foreldrefradrag
     if (barn===0){
