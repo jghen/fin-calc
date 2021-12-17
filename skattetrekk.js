@@ -51,7 +51,7 @@ function taxCalc(){
     }else if (barn===1){
         foreldrefradrag = 12500;
     }else {
-        foreldrefradrag = 12500 + 12500 * barn;
+        foreldrefradrag = 12500 + 7500 * barn;
     }
  
     const renteinntekter = binnskudd * irente;
