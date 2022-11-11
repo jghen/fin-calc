@@ -12,7 +12,7 @@ function toggleMenu() {
         blur.style.display = 'none';
 
     } else {
-        nav.style.display = 'block';
+        nav.style.display === 'block';
         menu.style.display = 'none';
         h3.style.marginRight = '-7rem';
         blur.style.display = 'block';
