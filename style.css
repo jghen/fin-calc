@@ -5,7 +5,6 @@ html, body {
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(240, 240, 240);
-    position: absolute;
 }
 .blurred {
     position: absolute;
