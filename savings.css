@@ -4,8 +4,8 @@ body {
 
 .box-calc {
     background: linear-gradient(to top left,#64d8a2d3, #33c983, #00dd76); 
-    width: 33em;
-    height: 22em;
+    width: 25em;
+    height: 17em;
 }
 
 .box-left li button {
