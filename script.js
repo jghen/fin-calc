@@ -17,7 +17,6 @@ function toggleMenu() {
   }
 }
 
-//neds jquery to work
 function commaSeparateNumber(index, val) {
   val = val.replace(/\D/g, "");
   var array = val.split("");
@@ -35,6 +34,7 @@ function commaSeparateNumber(index, val) {
 // });
 
 function loanMonthly() {
+
   //get values
   const UIbalance = document.getElementById("balance").value;
   const UIyears = document.getElementById("years").value;
@@ -61,6 +61,7 @@ function loanMonthly() {
 }
 
 function savingsMonthly() {
+
   const Sbalance = document.getElementById("balance").value;
   const Spayment = document.getElementById("payment").value;
   const Syears = document.getElementById("years").value;
@@ -93,6 +94,7 @@ function savingsMonthly() {
   const totalbalance = Math.round(singleContribution + lastelement);
   const endbalance = totalbalance.toLocaleString("en-US");
   document.getElementById("savings").value = endbalance;
+
   return false;
 }
 
